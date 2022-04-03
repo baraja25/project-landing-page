@@ -13,6 +13,8 @@ body {
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
 }
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
@@ -21,9 +23,71 @@ ol[class] {
 }
 /* Make images easier to work with */
 img {
-	max-width: 100%;
+	max-width: 20%;
 	display: block;
 }
-.mainText{
-	font-size: 4.8rem;
+/* variables */
+:root {
+	--bg-dark: #1f2937;
+	--text-color-light: #f9faf8;
+	--text-color-darker: #e5e7eb;
+	--button-color: #3882f6;
+	--font-size-L: 4.8rem;
+	--font-size-m: 3.6rem;
+	--font-size-h: 2.4rem;
+	--font-size-s: 1.8rem;
+	--font-weight-extra: 900;
 }
+.container {
+	max-height: 20%;
+	font-size: 3.5rem;
+}
+header {
+	font-size: 3rem;
+	background-color: var(--bg-dark);
+	color: var(--text-color-light);
+	display: flex;
+	justify-content: space-around;
+}
+.logo-text {
+	font-size: var(--font-size-h);
+}
+nav {
+	display: flex;
+	gap: 15px;
+	list-style: none;
+	align-items: center;
+}
+Main {
+	background-color: var(--bg-dark);
+	color: var(--text-color-light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mainText {
+	font-size: var(--font-size-s);
+	color: var(--text-color-darker);
+}
+.mainText button {
+	background-color: var(--button-color);
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	padding: 3px 20px;
+	color: var(--text-color-light);
+	margin-top: 15px;
+}
+.mainTextHeader {
+	font-size: var(--font-size-L);
+	color: var(--text-color-light);
+}
+.mainImage {
+	margin: 50px;
+	border-radius: 5px;
+}
+  footer {
+	font-size: 2rem;
+	background-color: var(--bg-dark);
+	color: var(--text-color-light);
+  }
